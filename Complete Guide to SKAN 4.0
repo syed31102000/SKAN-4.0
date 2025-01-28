@@ -1,0 +1,148 @@
+#**Complete Guide to SKAN 4.0: Transitioning from SKAN 3.0 and Optimizing Marketing Strategies for Gaming Companies**
+This document provides a comprehensive overview of the differences between SKAN 3.0 and SKAN 4.0, the implications for gaming marketers, and actionable steps to optimize marketing strategies using SKAN 4.0 data.
+It also highlights key concepts like crowd anonymity, source identifiers, lookback windows, and lock-in periods, and explains how to effectively use SKAN 4.0 to improve metrics like CAC, ROAS, and LTV.
+
+Gaming marketers must prepare for the switch to SKAN 4.0, as it offers significant advantages over SKAN 3.0. Tools like Singular allow backward compatibility, enabling a smooth transition.
+
+##**Key Differences Between SKAN 3.0 and SKAN 4.0**
+##1. Crowd Anonymity and Source Identifier
+SKAN 3.0: Limited campaign ID (2 bits, 4 values) and fixed privacy thresholds.
+
+SKAN 4.0: Introduces Crowd Anonymity, which determines data granularity based on install volume. Higher installs = more data.
+
+Source Identifier: Expanded to 4 bits (16 values), allowing more granular campaign tracking (e.g., campaign ID, ad set, geo, placement).
+
+Data Tiers:
+
+Tier 3 (High Crowd Anonymity): Full 4-digit source identifier and 64 fine-grained conversion values.
+
+Tier 1 (Low Crowd Anonymity): Minimal data (2-digit source identifier, 3 coarse conversion values).
+
+##2. Multiple Postbacks
+SKAN 3.0: Single postback after 24 hours.
+
+SKAN 4.0: Three postbacks over different time windows:
+
+Postback 1: 0-2 days (most data-rich).
+
+Postback 2: 3-7 days (coarse data, 3 values).
+
+Postback 3: 8-35 days (coarse data, 3 values).
+
+Impact: Enables tracking of long-term user behavior and better LTV estimation.
+
+##3. Lookback Windows
+SKAN 3.0: Fixed 24-hour lookback window.
+
+SKAN 4.0: Extends up to 35 days, allowing attribution of installs to older ad interactions.
+
+Use Case: Useful for retargeting and measuring long-term campaign effectiveness.
+
+##4. Conversion Value Locking
+SKAN 3.0: Conversion values could only increase.
+
+SKAN 4.0: Conversion values can increase or decrease, providing flexibility to reflect user behavior more accurately.
+
+Use Case: Helps differentiate between high-value and low-value users (e.g., subscribers vs. trial cancellers).
+
+##5. Random Delivery Delays
+SKAN 4.0: Postbacks are delayed by random timers to protect privacy:
+
+Postback 1: 1-2 days.
+
+Postback 2: 1-6 days.
+
+Postback 3: 1-6 days.
+
+Impact: Creates challenges for cohort measurement but ensures privacy compliance.
+
+##6. Web-to-App Support
+SKAN 4.0: Introduces support for web-to-app attribution via Safari, enabling cheaper web ad campaigns and richer onboarding experiences.
+
+What Changes Do Gaming Marketers Need to Make?
+1. Optimize Campaign Structure
+Action: Consolidate smaller campaigns to achieve higher crowd anonymity and access more granular data.
+
+Benefit: Better campaign optimization and more accurate attribution.
+
+2. Leverage Hierarchical Conversion Values
+Action: Use coarse-grained data for quick decision-making and fine-grained data for detailed optimization.
+
+Benefit: Improved understanding of user engagement and revenue potential.
+
+3. Plan for Multiple Postbacks
+Action: Align conversion values with key user actions (e.g., level completion, in-app purchases) across all three postback windows.
+
+Benefit: Better tracking of long-term user behavior and LTV.
+
+4. Monitor Crowd Anonymity Thresholds
+Action: Ensure campaigns generate sufficient install volume to achieve higher data tiers.
+
+Benefit: Access to more detailed source identifiers and conversion values.
+
+5. Avoid Conversion Locking
+Action: Stick to standard postback windows instead of locking conversion values early.
+
+Benefit: More accurate cohort measurement and better campaign evaluation.
+
+How SKAN 4.0 Impacts Marketing Metrics
+1. CAC (Customer Acquisition Cost)
+Impact: More granular data helps attribute costs to specific campaigns, improving CAC calculations.
+
+Action: Use Tier 3 data to identify high-performing campaigns and optimize spend.
+
+2. ROAS (Return on Ad Spend)
+Impact: Multiple postbacks enable tracking of revenue over longer periods, improving ROAS accuracy.
+
+Action: Focus on campaigns with high post-install engagement and revenue potential.
+
+3. LTV (Lifetime Value)
+Impact: Extended lookback windows and multiple postbacks provide better insights into long-term user behavior.
+
+Action: Use Postback 3 (8-35 days) to measure retention and LTV.
+
+How to Effectively Use SKAN 4.0 Data
+1. Set Clear Goals
+Define success metrics (e.g., installs, in-app purchases, retention).
+
+Align conversion values with these goals.
+
+2. Use Advanced Analytics Tools
+Leverage MMPs like Singular to decode SKAN 4.0 data and enrich it with first-party insights.
+
+Use predictive modeling to estimate LTV and ROAS.
+
+3. Test and Iterate
+Continuously test different campaign strategies and analyze SKAN 4.0 data to identify trends.
+
+Iterate based on insights to improve performance.
+
+4. Educate Your Team
+Train your marketing and data teams to interpret SKAN 4.0 data and understand its limitations.
+
+Preparing for the SKAN 3.0 to SKAN 4.0 Transition
+1. Update Your SDK
+Ensure your app uses the latest version of the Singular SDK (or your chosen MMP) to support SKAN 4.0.
+
+2. Collaborate with Ad Partners
+Confirm their SKAN 4.0 readiness and share your source identifier hierarchies for better campaign optimization.
+
+3. Plan Your Conversion Value Strategy
+Align coarse and fine conversion values to ensure coherent and actionable data.
+
+4. Build a Framework for Postback Analysis
+Evaluate user behavior at each postback stage (D1, D7, D35) to measure engagement and revenue.
+
+5. Decide on Conversion Locking
+Avoid early conversion locking to ensure accurate cohort measurement.
+
+Key Takeaways for Gaming Marketers
+SKAN 4.0 offers more granular data, multiple postbacks, and extended lookback windows, enabling better campaign optimization and long-term user behavior tracking.
+
+Crowd Anonymity and Source Identifiers are critical for accessing detailed data.
+
+Avoid Conversion Locking to ensure accurate cohort measurement.
+
+Collaborate with MMPs like Singular to decode SKAN 4.0 data and enrich it with first-party insights.
+
+By mastering SKAN 4.0, gaming marketers can unlock deeper insights into their campaigns, optimize marketing spend, and drive better results while respecting user privacy.
