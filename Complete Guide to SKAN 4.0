@@ -1,11 +1,12 @@
-#**Complete Guide to SKAN 4.0: Transitioning from SKAN 3.0 and Optimizing Marketing Strategies for Gaming Companies**
+Complete Guide to SKAN 4.0: Transitioning from SKAN 3.0 and Optimizing Marketing Strategies for Gaming Companies
+
 This document provides a comprehensive overview of the differences between SKAN 3.0 and SKAN 4.0, the implications for gaming marketers, and actionable steps to optimize marketing strategies using SKAN 4.0 data.
 It also highlights key concepts like crowd anonymity, source identifiers, lookback windows, and lock-in periods, and explains how to effectively use SKAN 4.0 to improve metrics like CAC, ROAS, and LTV.
 
 Gaming marketers must prepare for the switch to SKAN 4.0, as it offers significant advantages over SKAN 3.0. Tools like Singular allow backward compatibility, enabling a smooth transition.
 
-##**Key Differences Between SKAN 3.0 and SKAN 4.0**
-##1. Crowd Anonymity and Source Identifier
+Key Differences Between SKAN 3.0 and SKAN 4.0
+1. Crowd Anonymity and Source Identifier
 SKAN 3.0: Limited campaign ID (2 bits, 4 values) and fixed privacy thresholds.
 
 SKAN 4.0: Introduces Crowd Anonymity, which determines data granularity based on install volume. Higher installs = more data.
@@ -18,7 +19,7 @@ Tier 3 (High Crowd Anonymity): Full 4-digit source identifier and 64 fine-graine
 
 Tier 1 (Low Crowd Anonymity): Minimal data (2-digit source identifier, 3 coarse conversion values).
 
-##2. Multiple Postbacks
+2. Multiple Postbacks
 SKAN 3.0: Single postback after 24 hours.
 
 SKAN 4.0: Three postbacks over different time windows:
@@ -38,14 +39,14 @@ SKAN 4.0: Extends up to 35 days, allowing attribution of installs to older ad in
 
 Use Case: Useful for retargeting and measuring long-term campaign effectiveness.
 
-##4. Conversion Value Locking
+4. Conversion Value Locking
 SKAN 3.0: Conversion values could only increase.
 
 SKAN 4.0: Conversion values can increase or decrease, providing flexibility to reflect user behavior more accurately.
 
 Use Case: Helps differentiate between high-value and low-value users (e.g., subscribers vs. trial cancellers).
 
-##5. Random Delivery Delays
+5. Random Delivery Delays
 SKAN 4.0: Postbacks are delayed by random timers to protect privacy:
 
 Postback 1: 1-2 days.
@@ -56,7 +57,7 @@ Postback 3: 1-6 days.
 
 Impact: Creates challenges for cohort measurement but ensures privacy compliance.
 
-##6. Web-to-App Support
+6. Web-to-App Support
 SKAN 4.0: Introduces support for web-to-app attribution via Safari, enabling cheaper web ad campaigns and richer onboarding experiences.
 
 What Changes Do Gaming Marketers Need to Make?
